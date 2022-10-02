@@ -6,7 +6,7 @@ https://github.com/verus-lang/verus.
 Verification was tested and works at Verus commit `8c80c19ccd46d87cd3aa756cba7b9c5da3995d2e`.
 
 `$RUST_VERIFY` refers to the path to the Verus installation's `rust-verify.sh` script, while
-`EX_PATH` refers to the path to this directory.
+`$EX_PATH` refers to the path to this directory.
 
 To verify the first example (Section 3.2.2), run the following command:
 
