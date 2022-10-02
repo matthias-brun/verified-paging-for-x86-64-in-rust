@@ -17,3 +17,5 @@ The contents of the repository are as follows:
   12.3.1 of the thesis.
 * The directory _evaluation/benchmarks/single-threaded-benchmarks_ contains the data discussed in
   Section 12.3.2 of the thesis and instructions for how to reproduce the data.
+* The directory _verus_examples_ contains the code used to introduce Verus in Chapter 3 of the
+  thesis.
