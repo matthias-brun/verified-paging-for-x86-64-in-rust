@@ -5,6 +5,7 @@ in Rust*.
 
 The contents of the repository are as follows:
 
+* The thesis itself _thesis.pdf_.
 * The directory _verified-page-table_ contains the main artifact, a page table implementation formally verified
   for functional correctness on x86-64. (A few proof steps are incomplete, refer to the thesis for
   details.)
