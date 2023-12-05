@@ -13,11 +13,11 @@ fn benchmark_nros_vmem() {
         ),
         allocs: Vec::with_capacity(10240),
     };
-    let time_before = Instant::now();
     for i in 0..1_000_000 {
         vmem.map_generic(paging::VAddr::from_usize(i * 4096), (paging::PAddr::from(0u64), 4096), nros_vmem::MapAction::ReadWriteUser);
         // println!("{:x?}", pt.resolve(i * 4096));
     }
+    let time_before = Instant::now();
     for i in 1_000_000..101_000_000 {
         vmem.map_generic(
             paging::VAddr::from_usize(i * 4096),
@@ -30,11 +30,11 @@ fn benchmark_nros_vmem() {
 
     // unmap
 
-    let time_before = Instant::now();
     for i in 0..1_000_000 {
         vmem.unmap(paging::VAddr::from_usize(i * 4096)).unwrap();
         // println!("{:x?}", pt.resolve(i * 4096));
     }
+    let time_before = Instant::now();
     for i in 1_000_000..101_000_000 {
         vmem.unmap(paging::VAddr::from_usize(i * 4096)).unwrap();
         // println!("{:x?}", pt.resolve(i * 4096));
